@@ -1,0 +1,22 @@
+{
+  "name": "IronMan",
+  "version": "0.1.0",
+  "summary": "saver of world IronMan.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lyleLH/IronMan",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "MTTGCC": "v2top1@163.com"
+  },
+  "source": {
+    "git": "https://github.com/lyleLH/IronMan.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "IronMan/Classes/**/*"
+}

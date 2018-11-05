@@ -1,0 +1,16 @@
+PODS:
+  - IronMan (0.1.0)
+
+DEPENDENCIES:
+  - IronMan (from `../`)
+
+EXTERNAL SOURCES:
+  IronMan:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IronMan: 57d1fb712d03effedcfd1eba56ef8513fb41fc5f
+
+PODFILE CHECKSUM: 6cdf74f74978387dd91b8ad88e5e07765a41d8ed
+
+COCOAPODS: 1.5.3

@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0CC8758CB4F6822C5F448B2B /* Pods_IronMan_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IronMan_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1411E2C51694DCAFD29A3489 /* Pods-IronMan_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronMan_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IronMan_Example/Pods-IronMan_Example.release.xcconfig"; sourceTree = "<group>"; };
-		33CE2B3E511D84C0022D03BE /* IronMan.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = IronMan.podspec; path = ../IronMan.podspec; sourceTree = "<group>"; };
+		33CE2B3E511D84C0022D03BE /* IronMan.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IronMan.podspec; path = ../IronMan.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		34531EF27C6B78A81C136D7C /* Pods-IronMan_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronMan_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IronMan_Tests/Pods-IronMan_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* IronMan_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IronMan_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,10 +63,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8874A3E12D9C46663DAA1BBF /* Pods-IronMan_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronMan_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IronMan_Example/Pods-IronMan_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D40583513A3DAC9530A46C98 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D40583513A3DAC9530A46C98 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EC9F8B7D2FD409116AAFE5F1 /* Pods_IronMan_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IronMan_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69A27AE3939450C1F1BA099 /* Pods-IronMan_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronMan_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IronMan_Tests/Pods-IronMan_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FA186DA2B129FCDD054F91C9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA186DA2B129FCDD054F91C9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
