@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IronMan_Example' do
+  pod 'IronMan', :path => '../'
+
+  target 'IronMan_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
