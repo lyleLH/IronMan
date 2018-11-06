@@ -9,4 +9,11 @@
 
 @implementation MTTObject
 
+
+-(BOOL)callTheIronMan {
+    
+    NSLog(@"IronMan is comming");
+    return YES;
+}
+
 @end

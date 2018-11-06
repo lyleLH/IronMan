@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'IronMan_Example' do
   pod 'IronMan', :path => '../'
-
+  pod  'WXDevtool', '0.17.0', :configurations => ['Debug']
   target 'IronMan_Tests' do
     inherit! :search_paths
 

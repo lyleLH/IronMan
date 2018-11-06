@@ -7,7 +7,7 @@
 //
 
 #import "VKWXViewController.h"
-
+#import <IronMan/MTTObject.h>
 @interface VKWXViewController ()
 
 @end
@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning

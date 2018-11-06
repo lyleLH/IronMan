@@ -7,12 +7,14 @@
 //
 
 #import "VKWXAppDelegate.h"
+#import <WeexSDK/WeexSDK.h>
 
 @implementation VKWXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
     return YES;
 }
 
