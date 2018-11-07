@@ -11,7 +11,6 @@
 #import "WeexSDKManager.h"
 
 
-
 @implementation VKWXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

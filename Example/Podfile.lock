@@ -1,13 +1,16 @@
 PODS:
   - IronMan (0.1.0)
+  - TZImagePickerController (3.1.0)
   - WeexSDK (0.19.0)
 
 DEPENDENCIES:
   - IronMan (from `../`)
+  - TZImagePickerController
   - WeexSDK
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - TZImagePickerController
     - WeexSDK
 
 EXTERNAL SOURCES:
@@ -16,8 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   IronMan: 57d1fb712d03effedcfd1eba56ef8513fb41fc5f
+  TZImagePickerController: c9584b67b97d5a20b4dbbb58505fa0b6be590255
   WeexSDK: 434995ea3d16efbff5f586b68cb2572df9170f58
 
-PODFILE CHECKSUM: 213ae628c72e7c926ef70cbf89c79ebfe026005d
+PODFILE CHECKSUM: f6fc95176c814b63b11bdced7e80839e2c138574
 
 COCOAPODS: 1.5.3
