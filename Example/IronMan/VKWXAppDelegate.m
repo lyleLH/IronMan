@@ -7,16 +7,42 @@
 //
 
 #import "VKWXAppDelegate.h"
-#import <WeexSDK/WeexSDK.h>
+#import "VKWeexViewController.h"
+#import "WeexSDKManager.h"
+
+
 
 @implementation VKWXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
     
+    //初始化WeexSDK
+    [WeexSDKManager initWeexSDK];
+    
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSString *srcFile = [[NSBundle mainBundle]pathForResource:@"File.txt" ofType:nil];
+    NSString *doc = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
+    [fm copyItemAtPath:srcFile toPath:[doc stringByAppendingPathComponent:@"File.txt"] error:nil];
+    
+    NSString *srcDist = [[NSBundle mainBundle]pathForResource:@"dist" ofType:nil];
+    
+    [fm copyItemAtPath:srcDist toPath:[doc stringByAppendingPathComponent:@"dist"] error:nil];
+    
+    //设置根控制器
+    NSString *indexPath = [doc stringByAppendingString:@"/dist/index.js"];
+    NSURL *sourceUrl = [NSURL fileURLWithPath:indexPath];
+    VKWeexViewController *wxDemoVC = [[VKWeexViewController alloc] initWithSourceURL:sourceUrl];
+    self.window.rootViewController = [[WXRootViewController alloc] initWithRootViewController:wxDemoVC];
+    
+    [self.window makeKeyAndVisible];
+    
+    // Override point for customization after application launch.
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

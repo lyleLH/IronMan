@@ -1,8 +1,14 @@
 PODS:
   - IronMan (0.1.0)
+  - WeexSDK (0.19.0)
 
 DEPENDENCIES:
   - IronMan (from `../`)
+  - WeexSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - WeexSDK
 
 EXTERNAL SOURCES:
   IronMan:
@@ -10,7 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   IronMan: 57d1fb712d03effedcfd1eba56ef8513fb41fc5f
+  WeexSDK: 434995ea3d16efbff5f586b68cb2572df9170f58
 
-PODFILE CHECKSUM: 6cdf74f74978387dd91b8ad88e5e07765a41d8ed
+PODFILE CHECKSUM: 213ae628c72e7c926ef70cbf89c79ebfe026005d
 
 COCOAPODS: 1.5.3

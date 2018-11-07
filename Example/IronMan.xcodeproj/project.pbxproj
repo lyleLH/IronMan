@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		228F499B219297C8000ECC37 /* File.txt in Resources */ = {isa = PBXBuildFile; fileRef = 228F4992219297C8000ECC37 /* File.txt */; };
+		228F49A92192B62A000ECC37 /* WeexSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 228F49A52192B62A000ECC37 /* WeexSDKManager.m */; };
+		228F49AA2192B62A000ECC37 /* VKWeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228F49A62192B62A000ECC37 /* VKWeexViewController.m */; };
+		228F49B32192BC2C000ECC37 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 228F49B22192BC2C000ECC37 /* dist */; };
 		4E08ADF1910C27D506F06408 /* Pods_IronMan_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9F8B7D2FD409116AAFE5F1 /* Pods_IronMan_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -39,6 +43,12 @@
 /* Begin PBXFileReference section */
 		0CC8758CB4F6822C5F448B2B /* Pods_IronMan_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IronMan_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1411E2C51694DCAFD29A3489 /* Pods-IronMan_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronMan_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IronMan_Example/Pods-IronMan_Example.release.xcconfig"; sourceTree = "<group>"; };
+		228F4992219297C8000ECC37 /* File.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
+		228F49A52192B62A000ECC37 /* WeexSDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexSDKManager.m; sourceTree = "<group>"; };
+		228F49A62192B62A000ECC37 /* VKWeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKWeexViewController.m; sourceTree = "<group>"; };
+		228F49A72192B62A000ECC37 /* WeexSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexSDKManager.h; sourceTree = "<group>"; };
+		228F49A82192B62A000ECC37 /* VKWeexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKWeexViewController.h; sourceTree = "<group>"; };
+		228F49B22192BC2C000ECC37 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
 		33CE2B3E511D84C0022D03BE /* IronMan.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IronMan.podspec; path = ../IronMan.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		34531EF27C6B78A81C136D7C /* Pods-IronMan_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronMan_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IronMan_Tests/Pods-IronMan_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* IronMan_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IronMan_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +105,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		228F49A42192B62A000ECC37 /* WeexConfig */ = {
+			isa = PBXGroup;
+			children = (
+				228F49A52192B62A000ECC37 /* WeexSDKManager.m */,
+				228F49A62192B62A000ECC37 /* VKWeexViewController.m */,
+				228F49A72192B62A000ECC37 /* WeexSDKManager.h */,
+				228F49A82192B62A000ECC37 /* VKWeexViewController.h */,
+			);
+			path = WeexConfig;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +153,9 @@
 		6003F593195388D20070C39A /* Example for IronMan */ = {
 			isa = PBXGroup;
 			children = (
+				228F49B22192BC2C000ECC37 /* dist */,
+				228F49A42192B62A000ECC37 /* WeexConfig */,
+				228F4992219297C8000ECC37 /* File.txt */,
 				6003F59C195388D20070C39A /* VKWXAppDelegate.h */,
 				6003F59D195388D20070C39A /* VKWXAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -276,8 +300,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228F49B32192BC2C000ECC37 /* dist in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				228F499B219297C8000ECC37 /* File.txt in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -302,15 +328,11 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IronMan_Example/Pods-IronMan_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IronMan/IronMan.framework",
-				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
-				"${BUILT_PRODUCTS_DIR}/WXDevtool/WXDevtool.framework",
 				"${BUILT_PRODUCTS_DIR}/WeexSDK/WeexSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IronMan.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WXDevtool.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +384,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* VKWXAppDelegate.m in Sources */,
+				228F49AA2192B62A000ECC37 /* VKWeexViewController.m in Sources */,
+				228F49A92192B62A000ECC37 /* WeexSDKManager.m in Sources */,
 				6003F5A7195388D20070C39A /* VKWXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
