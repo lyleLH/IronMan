@@ -1,3 +1,257 @@
 // { "framework": "Vue"} 
 
-!function(t){function e(n){if(i[n])return i[n].exports;var o=i[n]={i:n,l:!1,exports:{}};return t[n].call(o.exports,o,o.exports,e),o.l=!0,o.exports}var i={};e.m=t,e.c=i,e.i=function(t){return t},e.d=function(t,i,n){e.o(t,i)||Object.defineProperty(t,i,{configurable:!1,enumerable:!0,get:n})},e.n=function(t){var i=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(i,"a",i),i},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="",e(e.s=6)}([function(t,e,i){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n=(weex.requireModule("navigator"),weex.requireModule("zip"));e.default={init:function(){},created:function(){var t=weex.config.bundleUrl;t=new String(t),console.log("bundleUrl",t);var e;e=t.substring(0,t.lastIndexOf("/dist")+1),console.log("nativeBase",e),this.baseURL=e},ready:function(){},destroyed:function(){},data:{bundleUrl:"world"},methods:{zip:function(){console.log("srcPath:File.txt");var t={src:"File.txt",des:"ZippedFile.zip"};n.zip(t,function(t,e){console.log(t)})},unzip:function(){var t={src:"ZippedFile.zip",des:"unzipFile.txt"};n.unzip(t,function(t,e){console.log(t)})},zipWithPwd:function(){console.log("srcPath:File.txt");var t={src:"File.txt",des:"ZippedFile.zip",pwd:"123abc"};n.zipWithPassword(t,function(t,e){console.log(t)})},unzipWithPwd:function(){var t={src:"ZippedFile.zip",des:"unzipFile.txt",pwd:"123abc"};n.unzipWithPassword(t,function(t,e){console.log(t)})}}}},,,function(t,e){t.exports={wrapper:{alignItems:"center",marginTop:120},title:{paddingTop:40,paddingBottom:40,fontSize:48},desc:{paddingTop:20,color:"#888888",fontSize:24},button:{marginTop:20,marginRight:20,marginBottom:20,marginLeft:20,paddingTop:20,paddingRight:20,paddingBottom:20,paddingLeft:20,backgroundColor:"#1ba1e2",color:"#ffffff"}}},,function(t,e){t.exports={render:function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("div",{staticClass:["wrapper"],on:{click:t.update}},[i("image",{staticStyle:{width:"100px",height:"100px"},attrs:{src:"https://vuejs.org/images/logo.png"}}),i("text",{staticClass:["title"]},[t._v("Hello "+t._s(t.target))]),i("text",{staticClass:["desc"]},[t._v("Now, let's use vue to build your weex app.")]),i("div",{staticClass:["button"],on:{click:t.zip}},[i("text",{staticStyle:{color:"#fff"}},[t._v("zip")])]),i("div",{staticClass:["button"],on:{click:t.unzip}},[i("text",{staticStyle:{color:"#fff"}},[t._v("unzip")])]),i("div",{staticClass:["button"],on:{click:t.zipWithPwd}},[i("text",{staticStyle:{color:"#fff"}},[t._v("zipWithPwd")])]),i("div",{staticClass:["button"],on:{click:t.unzipWithPwd}},[i("text",{staticStyle:{color:"#fff"}},[t._v("unzipWithPwd")])])])},staticRenderFns:[]},t.exports.render._withStripped=!0},function(t,e,i){var n,o,r=[];r.push(i(3)),n=i(0);var s=i(5);o=n=n||{},"object"!=typeof n.default&&"function"!=typeof n.default||(Object.keys(n).some(function(t){return"default"!==t&&"__esModule"!==t})&&console.error("named exports are not supported in *.vue files."),o=n=n.default),"function"==typeof o&&(o=o.options),o.__file="/Users/zdj/Documents/vankeGit/weexPlayground/src/index.vue",o.render=s.render,o.staticRenderFns=s.staticRenderFns,o._scopeId="data-v-73f7d980",o.style=o.style||{},r.forEach(function(t){for(var e in t)o.style[e]=t[e]}),"function"==typeof __register_static_styles__&&__register_static_styles__(o._scopeId,r),t.exports=n,t.exports.el="true",new Vue(t.exports)}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(1)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(2)
+
+/* template */
+var __vue_template__ = __webpack_require__(3)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/MTT/Documents/Documents_MacBook_Pro/vanke/wanke_playground/IronMan/Example/IronMan/dist/index.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-5d5d6af8"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+module.exports.el = 'true'
+new Vue(module.exports)
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "wrapper": {
+    "alignItems": "center",
+    "marginTop": "120"
+  },
+  "title": {
+    "paddingTop": "40",
+    "paddingBottom": "40",
+    "fontSize": "48"
+  },
+  "desc": {
+    "paddingTop": "20",
+    "color": "#888888",
+    "fontSize": "24"
+  },
+  "button": {
+    "marginTop": "20",
+    "marginRight": "20",
+    "marginBottom": "20",
+    "marginLeft": "20",
+    "paddingTop": "20",
+    "paddingRight": "20",
+    "paddingBottom": "20",
+    "paddingLeft": "20",
+    "backgroundColor": "#1ba1e2",
+    "color": "#ffffff"
+  }
+}
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var navigator = weex.requireModule('navigator');
+var photoPicker = weex.requireModule('photoPicker');
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+  init: function () {},
+  created: function () {
+
+    var bundleUrl = weex.config.bundleUrl;
+
+    bundleUrl = new String(bundleUrl);
+    console.log('bundleUrl', bundleUrl);
+
+    var nativeBase;
+    nativeBase = bundleUrl.substring(0, bundleUrl.lastIndexOf('/dist') + 1);
+    console.log('nativeBase', nativeBase);
+
+    this.baseURL = nativeBase;
+  },
+
+  ready: function () {},
+  destroyed: function () {},
+
+  data: {
+    bundleUrl: 'world'
+  },
+
+  methods: {
+    choose: function () {
+      var _this = this;
+      weex.requireModule('photoPicker').chooseImageWithOption({}, function (data, alive) {
+        console.log('======选择~~~~~~~~=====');
+        console.log(JSON.stringify(data));
+      });
+    }
+  }
+});
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["wrapper"],
+    on: {
+      "click": _vm.update
+    }
+  }, [_c('image', {
+    staticStyle: {
+      width: "100px",
+      height: "100px"
+    },
+    attrs: {
+      "src": "https://vuejs.org/images/logo.png"
+    }
+  }), _c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("Hello " + _vm._s(_vm.target))]), _c('text', {
+    staticClass: ["desc"]
+  }, [_vm._v("Now, let's use vue to build your weex app.")]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.choose
+    }
+  }, [_c('text', {
+    staticStyle: {
+      color: "#fff"
+    }
+  }, [_vm._v("点击选择图片")])])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ })
+/******/ ]);

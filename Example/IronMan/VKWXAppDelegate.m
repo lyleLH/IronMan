@@ -18,9 +18,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
  
-//    self.window.rootViewController = [[WXRootViewController alloc] initWithRootViewController:[self weextestLaunchingWithOptions:launchOptions]];
+    self.window.rootViewController = [[WXRootViewController alloc] initWithRootViewController:[self weextestLaunchingWithOptions:launchOptions]];
     
-    self.window.rootViewController = [[WXRootViewController alloc] initWithRootViewController:[self nativeTestLaunchingWithOptions:launchOptions]];
+//    self.window.rootViewController = [[WXRootViewController alloc] initWithRootViewController:[self nativeTestLaunchingWithOptions:launchOptions]];
     [self.window makeKeyAndVisible];
     
     // Override point for customization after application launch.

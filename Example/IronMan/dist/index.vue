@@ -4,17 +4,10 @@
     <image style="width:100px;height:100px" src="https://vuejs.org/images/logo.png"></image>
     <text class="title">Hello {{target}}</text>
     <text class="desc">Now, let's use vue to build your weex app.</text>
-    <div @click="zip" class="button">
-      <text style="color:#fff">zip</text>
+    
+    <div @click="choose" class="button">
+      <text style="color:#fff">点击选择图片</text>
     </div>
-    <div @click="unzip" class="button">
-      <text style="color:#fff">unzip</text>
-    </div>
-    <div @click="zipWithPwd" class="button">
-      <text style="color:#fff">zipWithPwd</text>
-    </div>
-    <div @click="unzipWithPwd" class="button">
-      <text style="color:#fff">unzipWithPwd</text>
     </div>
 
 </template>
@@ -36,8 +29,7 @@
 
 <script>
   var navigator = weex.requireModule('navigator')
-  var zip = weex.requireModule('zip') 
-
+  var photoPicker = weex.requireModule('photoPicker') 
 
   export default {
 
@@ -69,61 +61,13 @@
     },
 
     methods: {
-      zip: function() {
-          var srcPath = 'File.txt'
-          console.log('srcPath:'+srcPath);
-          var zippedPath = 'ZippedFile.zip'
-          var args = {
-            'src' : srcPath,
-            'des' : zippedPath
-          }
-          zip.zip(args,function (ret,alive) {
-            console.log(ret);
-          });
-      },
-
-      unzip: function() {
-          var srcPath = 'ZippedFile.zip'
-          var zippedPath = 'unzipFile.txt'
-          var args = {
-            'src' : srcPath,
-            'des' : zippedPath
-          }
-          zip.unzip(args,function (ret,alive) {
-            console.log(ret);
+      choose: function() {
+          var _this = this;
+          weex.requireModule('photoPicker').chooseImageWithOption({},function(data,alive){
+            console.log('======选择~~~~~~~~=====');
+            console.log(JSON.stringify(data));
           })
       },
-
-      zipWithPwd: function() {
-          var srcPath = 'File.txt'
-          console.log('srcPath:'+srcPath);
-          var zippedPath = 'ZippedFile.zip'
-          var pwd = '123abc'
-          var args = {
-            'src' : srcPath,
-            'des' : zippedPath,
-            'pwd' : pwd
-          }
-          zip.zipWithPassword(args,function (ret,alive) {
-            console.log(ret);
-          });
-      },
-
-      unzipWithPwd: function() {
-          var srcPath = 'ZippedFile.zip'
-          var zippedPath = 'unzipFile.txt'
-          var pwd = '123abc'
-          var args = {
-            'src' : srcPath,
-            'des' : zippedPath,
-            'pwd' : pwd
-          }
-          zip.unzipWithPassword(args,function (ret,alive) {
-            console.log(ret);
-          })
-      }
-
-
     }
   }
 </script>

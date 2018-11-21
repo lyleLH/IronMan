@@ -38,6 +38,7 @@
 
 @implementation VKVXPhotoPickerModule
 
+WX_EXPORT_METHOD(@selector(chooseImageWithOption:result:))
 
 - (NSString *)imageSavedPrefixPath {
     if(!_imageSavedPrefixPath){
