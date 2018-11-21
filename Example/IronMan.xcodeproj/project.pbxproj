@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22675A1721A3EAC10051D2DA /* UIViewController+mtt_category.m in Sources */ = {isa = PBXBuildFile; fileRef = 22675A1621A3EAC10051D2DA /* UIViewController+mtt_category.m */; };
 		228F499B219297C8000ECC37 /* File.txt in Resources */ = {isa = PBXBuildFile; fileRef = 228F4992219297C8000ECC37 /* File.txt */; };
 		228F49A92192B62A000ECC37 /* WeexSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 228F49A52192B62A000ECC37 /* WeexSDKManager.m */; };
 		228F49AA2192B62A000ECC37 /* VKWeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228F49A62192B62A000ECC37 /* VKWeexViewController.m */; };
 		228F49B32192BC2C000ECC37 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 228F49B22192BC2C000ECC37 /* dist */; };
-		228F49BA2192DA17000ECC37 /* VKVXPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 228F49B92192DA16000ECC37 /* VKVXPhotoPicker.m */; };
+		228F49BA2192DA17000ECC37 /* VKVXPhotoPickerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 228F49B92192DA16000ECC37 /* VKVXPhotoPickerModule.m */; };
 		4E08ADF1910C27D506F06408 /* Pods_IronMan_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9F8B7D2FD409116AAFE5F1 /* Pods_IronMan_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -44,14 +45,16 @@
 /* Begin PBXFileReference section */
 		0CC8758CB4F6822C5F448B2B /* Pods_IronMan_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IronMan_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1411E2C51694DCAFD29A3489 /* Pods-IronMan_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronMan_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IronMan_Example/Pods-IronMan_Example.release.xcconfig"; sourceTree = "<group>"; };
+		22675A1521A3EAC10051D2DA /* UIViewController+mtt_category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+mtt_category.h"; sourceTree = "<group>"; };
+		22675A1621A3EAC10051D2DA /* UIViewController+mtt_category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+mtt_category.m"; sourceTree = "<group>"; };
 		228F4992219297C8000ECC37 /* File.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
 		228F49A52192B62A000ECC37 /* WeexSDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexSDKManager.m; sourceTree = "<group>"; };
 		228F49A62192B62A000ECC37 /* VKWeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKWeexViewController.m; sourceTree = "<group>"; };
 		228F49A72192B62A000ECC37 /* WeexSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexSDKManager.h; sourceTree = "<group>"; };
 		228F49A82192B62A000ECC37 /* VKWeexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKWeexViewController.h; sourceTree = "<group>"; };
 		228F49B22192BC2C000ECC37 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
-		228F49B82192DA16000ECC37 /* VKVXPhotoPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKVXPhotoPicker.h; sourceTree = "<group>"; };
-		228F49B92192DA16000ECC37 /* VKVXPhotoPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKVXPhotoPicker.m; sourceTree = "<group>"; };
+		228F49B82192DA16000ECC37 /* VKVXPhotoPickerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKVXPhotoPickerModule.h; sourceTree = "<group>"; };
+		228F49B92192DA16000ECC37 /* VKVXPhotoPickerModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKVXPhotoPickerModule.m; sourceTree = "<group>"; };
 		33CE2B3E511D84C0022D03BE /* IronMan.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IronMan.podspec; path = ../IronMan.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		34531EF27C6B78A81C136D7C /* Pods-IronMan_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronMan_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IronMan_Tests/Pods-IronMan_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* IronMan_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IronMan_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,10 +114,12 @@
 		228F49A42192B62A000ECC37 /* WeexConfig */ = {
 			isa = PBXGroup;
 			children = (
+				228F49A72192B62A000ECC37 /* WeexSDKManager.h */,
 				228F49A52192B62A000ECC37 /* WeexSDKManager.m */,
 				228F49A62192B62A000ECC37 /* VKWeexViewController.m */,
-				228F49A72192B62A000ECC37 /* WeexSDKManager.h */,
 				228F49A82192B62A000ECC37 /* VKWeexViewController.h */,
+				22675A1521A3EAC10051D2DA /* UIViewController+mtt_category.h */,
+				22675A1621A3EAC10051D2DA /* UIViewController+mtt_category.m */,
 			);
 			path = WeexConfig;
 			sourceTree = "<group>";
@@ -156,8 +161,8 @@
 		6003F593195388D20070C39A /* Example for IronMan */ = {
 			isa = PBXGroup;
 			children = (
-				228F49B82192DA16000ECC37 /* VKVXPhotoPicker.h */,
-				228F49B92192DA16000ECC37 /* VKVXPhotoPicker.m */,
+				228F49B82192DA16000ECC37 /* VKVXPhotoPickerModule.h */,
+				228F49B92192DA16000ECC37 /* VKVXPhotoPickerModule.m */,
 				228F49B22192BC2C000ECC37 /* dist */,
 				228F49A42192B62A000ECC37 /* WeexConfig */,
 				228F4992219297C8000ECC37 /* File.txt */,
@@ -393,7 +398,8 @@
 				6003F59E195388D20070C39A /* VKWXAppDelegate.m in Sources */,
 				228F49AA2192B62A000ECC37 /* VKWeexViewController.m in Sources */,
 				228F49A92192B62A000ECC37 /* WeexSDKManager.m in Sources */,
-				228F49BA2192DA17000ECC37 /* VKVXPhotoPicker.m in Sources */,
+				22675A1721A3EAC10051D2DA /* UIViewController+mtt_category.m in Sources */,
+				228F49BA2192DA17000ECC37 /* VKVXPhotoPickerModule.m in Sources */,
 				6003F5A7195388D20070C39A /* VKWXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

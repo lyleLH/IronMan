@@ -8,6 +8,7 @@
 
 #import "VKWXViewController.h"
 #import <IronMan/MTTObject.h>
+#import "VKVXPhotoPickerModule.h"
 @interface VKWXViewController ()
 
 @end
@@ -18,7 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+    VKVXPhotoPickerModule * picker = [[VKVXPhotoPickerModule alloc] init];
+    [picker chooseImageWithOption:@{} result:^(id result, BOOL keepAlive) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning

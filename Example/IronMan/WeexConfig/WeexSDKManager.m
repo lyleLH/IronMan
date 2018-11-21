@@ -10,7 +10,7 @@
 
 
 
-//#import <VKZipModule/VKZipModule.h>
+#import "VKVXPhotoPickerModule.h"
 
 @implementation WeexSDKManager
 
@@ -18,7 +18,8 @@
 {
     //初始weex环境
     [WXSDKEngine initSDKEnvironment];
-    
+    //TODO: 注册组件
+    [WXSDKEngine registerModule:@"photoPicker" withClass:[VKVXPhotoPickerModule class]];
     
 #ifdef DEBUG
     [WXLog setLogLevel:WXLogLevelLog];

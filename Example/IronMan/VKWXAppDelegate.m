@@ -9,7 +9,7 @@
 #import "VKWXAppDelegate.h"
 #import "VKWeexViewController.h"
 #import "WeexSDKManager.h"
-
+#import "VKWXViewController.h"
 
 @implementation VKWXAppDelegate
 
@@ -17,7 +17,18 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
+ 
+//    self.window.rootViewController = [[WXRootViewController alloc] initWithRootViewController:[self weextestLaunchingWithOptions:launchOptions]];
     
+    self.window.rootViewController = [[WXRootViewController alloc] initWithRootViewController:[self nativeTestLaunchingWithOptions:launchOptions]];
+    [self.window makeKeyAndVisible];
+    
+    // Override point for customization after application launch.
+    return YES;
+}
+
+
+- (UIViewController * )weextestLaunchingWithOptions:(NSDictionary *)launchOptions {
     //初始化WeexSDK
     [WeexSDKManager initWeexSDK];
     
@@ -34,12 +45,13 @@
     NSString *indexPath = [doc stringByAppendingString:@"/dist/index.js"];
     NSURL *sourceUrl = [NSURL fileURLWithPath:indexPath];
     VKWeexViewController *wxDemoVC = [[VKWeexViewController alloc] initWithSourceURL:sourceUrl];
-    self.window.rootViewController = [[WXRootViewController alloc] initWithRootViewController:wxDemoVC];
+    return wxDemoVC;
     
-    [self.window makeKeyAndVisible];
-    
-    // Override point for customization after application launch.
-    return YES;
+}
+
+
+- (UIViewController * )nativeTestLaunchingWithOptions:(NSDictionary *)launchOptions {
+    return [[VKWXViewController alloc] init];
 }
 
 
